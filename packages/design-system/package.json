@@ -5,7 +5,9 @@
   "typings": "build/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "start": "tsc -w"
+    "start": "tsc -w",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "private": true,
   "peerDependencies": {
@@ -18,5 +20,13 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "typescript": "~3.8.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0"
   }
 }

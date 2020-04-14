@@ -3,14 +3,13 @@
   "private": true,
   "scripts": {
     "start": "concurrently --kill-others \"yarn ds\" \"yarn portal\"",
+    "storybook": "concurrently \"yarn ds\" \"yarn --cwd packages/design-system storybook\"",
     "portal": "yarn --cwd packages/portal start",
     "ds": "yarn --cwd packages/design-system start"
   },
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "concurrently": "^5.1.0"
   }
